@@ -10,12 +10,20 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { StudantlistComponent } from './components/studantlist/studantlist.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ListFormComponent } from './components/list-form/list-form.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    StudantlistComponent
+    StudantlistComponent,
+    ListFormComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +32,14 @@ import {MatTableModule} from '@angular/material/table';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatDialogModule,
+    MatInputModule,
+    MatDatepickerModule,
+    ReactiveFormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
